@@ -1,0 +1,748 @@
+@font-face {
+    font-family: --primery-font;
+    src: url(./font/tahoma.ttf);
+}
+:root {
+    font-family: "tahoma";
+}
+
+body {
+    font-family: var(--primery-font);
+    margin: 0px;
+    padding: 0px;
+    background-color: #080808f8;
+}
+
+
+body .for-width {
+    margin: auto;
+    width: 60%;
+    height: 100px;
+}
+
+body .for-width header .logo {
+    width: 100%;
+    
+}
+body .for-width header .logo a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: nowrap;
+}
+
+body .for-width header .logo a img {
+    width: 58px;
+    height: 58px;
+   margin: 5px;
+}
+
+body .for-width header .logo a .first-h1,.second-h1, .first-span, .second-span {
+    font-size: 43px;
+    margin: 0px;
+    height: 60px;
+    margin: 5px;
+    font-family: var(--primery-font);
+}
+
+body .for-width header .logo .first-span, .second-span{
+  color: yellow;
+} 
+body .for-width header .logo h3 {
+    color: yellow;
+    font-family: var(--primery-font);
+    font-size: 24px;
+    margin: 10px 7%;
+}
+body .for-width header .phone
+ {
+    width: 280px;
+    height: 48px;
+    background-color: yellow;
+    color: #0C0C0C;
+    text-align: center;
+    border-radius: 0px 5px;
+    position: absolute;
+    right: 20%;
+}
+
+body .for-width header .phone p {
+    font-size: 22px;
+    font-family: var(--primery-font);
+    margin: 10px;
+}
+
+/* NAV PART */
+
+nav {
+    width: 100%;
+    height: 45px;
+    margin: auto;
+    background-color:#010101 ;
+    border-radius: 10px 10px 0px 0px ; 
+    margin-top: 80px;
+}
+
+nav  .navigation { 
+    width: 100%;
+    height: 45px;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: inset 0px 20px 10px 0px #565750;
+    border-radius: 10px 10px 0px 0px;
+
+}
+
+nav  ul li {
+    list-style-type: none;
+    width: 100%;
+    height: 45px;
+    position: relative;
+    display: grid;
+    align-content: center;
+    border-radius: 10px 10px 0px 0px;
+    transition-duration: 0.5s;
+}
+
+nav ul li:hover  {
+    background-color: #565750;
+    transition-duration: 0.5s;
+}
+nav ul li a:hover {
+    color: white;
+}
+
+nav  ul li a {
+    width: 100%;
+    height: 45px;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav  ul> li >ul {
+    display: none;
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    bottom: 10px;
+    left: -14%;
+}
+nav ul li:hover  ul{
+    display: block;
+}
+
+
+nav  ul> li >ul li {
+    width: 100%;
+    height: 30px;
+    background-color: #010101;
+    border-radius:  0px 0px 5px 5px;
+}
+nav  .navigation li ul li a {
+    position: absolute;
+    top: -7px;
+
+}
+
+
+nav .navigation .active {
+    background-color: #EBC700;
+}
+/* main part */
+
+
+main .baner {
+    width: 100%;
+}
+
+
+main .baner img {
+    width: 100%;
+}
+
+
+
+
+/* car models */
+
+
+main .car-models {
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 2fr;
+    align-items: center;
+    justify-items: center;
+}
+
+main .car-models img {
+    height: 70px;
+}
+
+
+
+
+/*welcome*/
+main .welcome {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .welcome .right {
+    width: 30%;
+    height: 230px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+main .welcome .right div {
+    width: 100%;
+    height: 50px;
+    background-color: #030303;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 15px;
+}
+ 
+
+main .welcome .right div i {
+    font-size: 40px;
+    color: yellow;
+}
+
+main .welcome .right div a {
+    text-decoration: none;
+    color: white;
+    font-family: var(--primery-font);
+    font-size: 22px;
+}
+
+
+main .welcome .left {
+    width: 63%;
+    height: 230px;
+    display: grid;
+    grid-template-rows: 2fr 1fr 3fr;
+    row-gap: 20px;
+}
+
+
+
+main .welcome .left h2 {
+    font-family: var(--primery-font);
+    font-size: 28px;
+    color: yellow;
+    margin: 0px;
+}
+
+main .welcome .left p {
+    color: white;
+    font-family: var(--primery-font);
+    font-size: 14px;
+    margin: 0px;
+}
+
+/* line part*/ 
+
+main .line {
+    width: 99%;
+    height: 5px;
+    background-color: yellow;
+    margin: auto;
+
+}
+
+/*map part */
+
+main .map-part {
+    margin-top: 50px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5%;
+    
+}
+
+
+main .map-part .first {
+    border-radius: 5px;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 2fr;
+    background-color: #353535;
+
+}
+
+
+main .map-part .first div {
+    width: 100%;
+    height: 150px;
+}
+
+main .map-part .first div h3 {
+    margin-bottom: 5px;
+    margin-left: 15px;
+    color: yellow;
+    font-size: 22px;
+    font-family: var(--primery-font);
+
+}
+
+main .map-part .first div span {
+    margin-left: 13px;
+    color: white;
+    font-family: var(--primery-font);
+    font-size: 16px;
+}
+
+main .map-part .first div p {
+    margin-top: 0px;
+    margin-left: 13px;
+    font-size: 14px;
+    color: white;
+    font-family: var(--primery-font);
+}
+
+main .map-part .first div iframe {
+   margin-left: 13px;
+}
+
+/* midle part */
+
+
+main .map-part .midle {
+    width: 100%;
+    border-right: 2px solid yellow;
+}
+
+main .map-part .midle h3 {
+    color: yellow;
+    font-size: 22px;
+    font-family: var(--primery-font);
+}
+
+main .map-part .midle p {
+    font-size: 14px;
+    color: white;
+    font-family: var(--primery-font);
+}
+/*last aside part */
+
+main .map-part .last {
+    width: 100%;
+
+}
+
+main .map-part .last  h3 {
+    margin-left: 15px;
+    color: yellow;
+    font-size: 22px;
+    font-family: var(--primery-font);
+}
+
+
+main .map-part .last ul{
+    padding: 0px;
+    margin-bottom: 60px;
+}
+main .map-part .last ul li {
+    list-style-type: none;
+    color: white;
+    margin: 15px;
+}
+
+main .map-part .last div {
+    width: 130px;
+    height: 25px;
+    background-color: yellow;
+    text-align: center;
+    margin-left:15px ;
+    border-radius: 5px;
+}
+
+main .map-part .last div a {
+    text-decoration: none;
+    color: black;
+    font-family: var(--primery-font);
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer part */
+
+footer {
+    margin: auto;
+    background-color: yellow;
+    width: 100%;
+    height: 50px;
+    
+}
+
+
+footer .footer-wrapper {
+    width: 94%;
+    display: flex;
+    justify-content: space-between;
+}
+footer .footer-wrapper div {
+    margin: 10px;
+}
+
+footer .footer-wrapper div i {
+    font-size: 22px;
+    background-color: #0C0C0C;
+    color: white;
+    margin-left: 10px;
+    border-radius: 2px;
+}
+
+
+
+/*maintance page part -------------------------------*/
+
+
+.for-width main  .uper-title {
+    width: 100%;
+    height: 50px;
+    border-bottom: 4px solid yellow;
+    margin-bottom: 20px;
+}
+
+
+.for-width main  .uper-title h1 {
+    font-family: var(--primery-font);
+    color: yellow;
+    font-size: 24px;
+}
+
+
+/* maintenance part */ 
+
+
+.for-width main .maintenance-logo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.for-width main .maintenance-logo img {
+    width: 98%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid yellow;
+    border-radius: 10px;
+}
+
+
+.for-width main .maintenance-logo div p {
+    font-family: var(--primery-font);
+    color: white;
+    font-size: 16px;
+    max-width: 70%;
+}
+
+
+.for-width main .maintenance-logo div {
+    width: 105%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.for-width main .maintenance-logo div> div {
+    width: 15%;
+    height: 35px;
+    background-color: yellow;
+    border-radius: 5px;
+    text-align: center;
+    transition-duration: 0.7s;
+}
+
+.for-width main .maintenance-logo div> div:hover{
+    background-color: white;
+    transition-duration: 0.7s;
+}
+
+.for-width main .maintenance-logo div > div a {
+    text-decoration: none;
+    font-family: var(--primery-font);
+    font-size: 12px;
+    color: #030303;
+}
+
+
+/*service part*/
+
+
+.for-width main .service-part  {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 3%;
+}
+
+
+.for-width main .service-part .same-service div {
+    display: flex;
+    align-items: center;
+}
+
+
+.for-width main .service-part .same-service div i {
+    color: yellow;
+    font-size: 40px;
+}
+
+.for-width main .service-part .same-service div h2 {
+    font-size: 22px;
+    font-family: var(--primery-font);
+    color: yellow;
+    margin-left: 3px;
+}
+
+.for-width main .service-part .same-service p {
+    color: white;
+    font-family: var(--primery-font);
+    font-size: 14px;
+}
+
+/* service  repairs.html part*/
+
+.for-width main .service-paragraph {
+    width: 80%;
+    margin-left: 1%;
+}
+
+.for-width main .service-paragraph p {
+    color: white;
+    font-family: var(--primery-font);
+    font-size: 16px;
+    margin: 0px;
+    font-weight: bold;
+}
+
+
+/* what we do parrt */
+
+.for-width main .what-we-do {
+    margin-top: 50px;
+    display: grid;
+    row-gap: 40px;
+}
+
+
+.for-width main .what-we-do  .main-div {
+    width: 80%;
+    height: 180px;
+    border: 2px solid yellow;
+    border-radius: 10px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    column-gap: 4%;
+}
+
+.for-width main .what-we-do  .main-div span {
+    margin-left: 20px;
+    color: yellow;
+    font-size: 60px;
+    font-family: var(--primery-font);
+}
+
+.for-width main .what-we-do  .main-div div h3 {
+    color: yellow;
+    font-size: 22px;
+    font-family: var(--primery-font);
+    margin-top: 20px;
+}
+
+.for-width main .what-we-do  .main-div div p {
+    color: white;
+    font-size: 14px;
+    font-family: var(--primery-font);
+}
+
+
+
+/*location part for location.html */
+
+
+.for-width main .location {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    column-gap: 50px;
+}
+
+
+.for-width main .location .aside-adrass h2 {
+    color: yellow;
+    font-size: 22px;
+    font-family: var(--primery-font);
+}
+
+.for-width main .location .aside-adrass p {
+    color: white;
+    font-size: 14px;
+    font-family: var(--primery-font);
+    margin-bottom: 50px;
+}
+
+.for-width main .location .aside-adrass div i {
+    color: white;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+
+.for-width main .location .aside-map iframe {
+    width: 100%;
+    height: 500px;
+}
+
+/*contact.html part */ 
+
+.for-width main .contact {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    align-content: flex-start;
+    width: 100%;
+    height: 350px;
+}
+
+
+
+
+
+
+.for-width main .contact .info p {
+    color: white;
+    font-size: 14px;
+    font-family: var(--primery-font);
+   margin: 0px;
+}
+
+
+
+.for-width main .contact .register-form form {
+    display: grid;
+    justify-items: end;
+    row-gap: 5px;
+}
+.for-width main .contact .register-form .item1,.item2,.item3,.item4,.item5{
+    background-color: #030303;
+    border: 1px solid yellow;
+    padding: 0px 10px;
+}
+.for-width main .contact .register-form .item1,.item2,.item3 {
+    width: 90%;
+    height: 30px;
+}
+
+.for-width main .contact .register-form .item1 {
+    grid-column: 1 ;
+    grid-row: 1;
+
+}
+
+
+.for-width main .contact .register-form .item2{
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.for-width main .contact .register-form .item3 {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.for-width main .contact .register-form .item4{
+    max-width: 90%;
+    min-width: 90%;
+    max-height: 110px;
+    min-height: 110px;
+    grid-column: 2;
+    grid-row: 1 /span 3 ;
+}
+.for-width main .contact .register-form .item5 {
+    grid-column: 2;
+    grid-row: 4;
+    width: 150px;
+    height: 30px;
+    background-color: #EBC700;
+}
+
+
+::placeholder {
+    color: white;
+}
+
+
+
+
+
+
+/* lets chat part */
+
+
+.chat {
+    position: fixed;
+    right: 20px;
+    bottom: 0px;
+    width: 200px;
+    height: 50px;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chat i {
+    font-size: 26px;
+}
+
+.chat button {
+    font-family: var(--primery-font);
+    font-size: 20px;
+    background-color: yellow;
+    margin-left: 10px;
+    border: 0px;
+}

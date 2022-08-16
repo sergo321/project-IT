@@ -1,0 +1,86 @@
+/* index.html responsive*/
+
+
+
+@media screen and (max-width:1000px) { 
+    body .for-width{
+        width: 100%;
+    }
+    body .for-width header .phone{
+        right: 1%;
+    }
+    /*car models section part*/
+
+    main .car-models img {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:595px){
+    body .for-width header .logo a .first-h1,.second-h1, .first-span, .second-span {
+        font-size: 30px;
+}
+body .for-width header .logo a img {
+    width: 40px;
+    height: 40px;
+}
+/*about part */
+
+main .welcome {
+    height: 750px;
+    display: flex;
+    column-gap: 20px;
+    flex-direction: column;
+    align-items:center;
+    justify-content: flex-start;
+}
+main .map-part {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+/*maintyance servise part */
+
+.for-width main .service-part {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+.for-width main .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+}
+
+
+
+
+@media screen and (max-width:448px){
+    body .for-width header .logo a .first-h1,.second-h1, .first-span, .second-span {
+        font-size: 20px;
+}
+body .for-width header .logo a img {
+    width: 30px;
+    height: 30px;
+}
+.for-width main .what-we-do  .main-div{
+    height: 350px;
+}
+.for-width main .what-we-do  .main-div span{
+    font-size: 40px;
+}
+}
+
+
+@media screen and (max-width:306px){
+    body .for-width header .logo a .first-h1,.second-h1, .first-span, .second-span {
+        font-size: 15px;
+}
+body .for-width header .logo a img {
+    width: 22px;
+    height: 22px;
+}
+}
